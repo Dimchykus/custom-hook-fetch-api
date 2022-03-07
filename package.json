@@ -1,6 +1,6 @@
 {
   "name": "custom-hook-fetch-api",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "custom hook for api call's",
   "main": "index.js",
   "homepage": "https://github.com/Dimchykus/custom-hook-fetch-api",
