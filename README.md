@@ -1,18 +1,18 @@
-### custom-hook-fetch-api
+# custom-hook-fetch-api
 
 ## Installation
 
 ```
 npm i custom-hook-fetch-api
 ```
-# OR
+### OR
 ```
 yarn add custom-hook-fetch-api
 ```
 
 ## Quick Start
 
-# Basic Usage
+## Basic Usage
 ```
 import { useEffect } from "react";
 import Request from "custom-hook-fetch-api";
