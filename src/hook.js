@@ -1,22 +1,22 @@
 import { useState } from "react";
 
-const Request = (url, API_KEY) => {
+const Request = (url, options) => {
   const [data, setData] = useState(null);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const requestOptions = {
+  const defaultHeaders = {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
       "Access-Control-Allow-Methods": "*",
       "Access-Control-Allow-Origin": "*",
-      Authorization: API_KEY ? "Bearer " + API_KEY : "",
     },
   };
+
   const request = async () => {
     setLoading(true);
-    await fetch(url, requestOptions)
+    await fetch(url, options ? options : defaultHeaders)
       .then((response) => {
         return response.json();
       })
